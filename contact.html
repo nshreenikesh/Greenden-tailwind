@@ -14,7 +14,7 @@
     <!-- navbar -->
     <nav class="flex bg-green-100 justify-between items-center p-3 shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -24,6 +24,17 @@
             <li class=" hover:underline hover:text-black"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!-- side-nav -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer"> X</p>
+        </div>
+         <ul class=" text-gray-600 gap-5 flex flex-col items-center">
+            <li class=" hover:underline hover:text-black"><a href="./index.html">Home</a></li>
+            <li class=" hover:underline hover:text-black"><a href="./product_page.html">Products</a></li>
+            <li class=" hover:underline hover:text-black"><a href="./contact.html">Contact</a></li>
+        </ul>
+     </section>
     <!-- contact -->
      <section class="body-font relative bg-gray-900 text-gray-400">
 
@@ -104,5 +115,6 @@
         <p>The Standard chunk of Lorem ipsum is used since the 1500s is reprodused below for the interest</p><br>
         <p>@ 2021 Greenday.com</p>
       </section>
+      <script src="contact.js"></script>
 </body>
 </html>
